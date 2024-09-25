@@ -1,0 +1,68 @@
+h1 {
+    color: rgb(19, 16, 16);
+    text-align: center;
+  }
+
+  .img1 {
+    padding: 13px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    margin-left: 95px;
+  }
+
+  .box {
+    display: flex;
+    justify-content: baseline;
+    height: 80px;
+    width: 200px;
+    background-color: white;
+    border: 3.5px solid;
+    border-color: rgb(29, 28, 28);
+    border-radius: 10px;
+    margin: 30px;
+  }
+
+  header {
+    padding-top: 25px;
+  }
+
+  button {
+    height: 50px;
+    width: 90px;
+    background-color: rgb(255, 255, 255);
+    border: 3.5px solid black;
+    padding: 0px;
+    border-radius: 10px;
+    margin-top: 1%;
+
+  }
+
+  .name {
+    font-size: 2rem;
+    font-family: "Play", sans-serif;
+    text-align: center;
+  }
+
+  .neon h3 {
+    margin: 1rem;
+    animation: neon 2s ease infinite;
+  }
+
+  @keyframes neon {
+
+    50% {
+      text-shadow: 0 0 2px #111010, 0 0 5px #0e0e0e, 0 0 5px #090808, 0 0 5px #0d0d0d, 0 0 2px #0e0e0e, 4px 4px 2px #070707;
+      color: #f3f7f7;
+    }
+  }
+
+  .image {
+    background-position-x: 49%;
+    background-position-y: 5%;
+  }

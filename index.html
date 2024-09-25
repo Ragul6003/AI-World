@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #navbar {
+            overflow: hidden;
+
+
+            background-color: #f9fdfd80;
+            position: fixed;
+            top: 0;
+            width: 100%;
+
+            height: 50px;
+
+        }
+
+        /* Navbar links */
+        #navbar a {
+            float: left;
+            display: block;
+            text-align: ;
+            color: #0f0f0f;
+            text-align: center;
+            padding: 14px;
+            text-decoration: none;
+        }
+
+        /* .navbar {
+            overflow: hidden;
+            top: 0;
+            /* background-color: aqua; 
+            width: 100%;
+            height: 500px;
+            /* background-color: rgba(205, 63, 63, 0.5);
+            font-family: Arial;
+            height: 10;
+            text-align: center;
+            color:transparent;  
+            position: fixed;
+            z-index: 1;
+        } */
+
+        .dropdownleft {
+            float: left;
+            overflow: hidden;
+            height: 60px;
+            width: 50px;
+            background-color: #e0e2e280;
+
+
+
+        }
+
+        .dropdownleft .dropbtnleft {
+            font-size: 16px;
+            border: none;
+
+            outline: none;
+            color: rgb(28, 28, 29);
+            padding: 10px;
+            background-color: inherit;
+            font-family: inherit;
+
+
+        }
+
+        /* .dropdownleft:hover .dropbtnleft {
+            background-color: rgb(43, 46, 47);
+            
+        } */
+        .dropdownleft-content {
+
+
+            background-color: #e0e2e280;
+            min-width: 120px;
+            box-shadow: 0px 8px 16;
+            background-color: #e0e2e280;
+
+        }
+
+        .dropdownleft-content a {
+            float: none;
+            color: rgb(19, 17, 17);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdownleft-content a:hover {
+            background-color: rgba(243, 138, 138, 0.721);
+        }
+
+        .dropdownleft:hover .dropdownleft-content {
+            display: block;
+        }
+
+        .box {
+            /* position: relative; */
+
+            height: 450px;
+            padding-right: 0px;
+            /* margin-top: -30px; */
+            overflow: hidden;
+            background-image: url(IMG/1.jpg);
+            padding-left: 0px;
+            background-position: 610PX;
+            background-position-y: 605px;
+            background-size: coVER;
+            color: whitesmoke;
+            text-align: center;
+        }
+
+        .box2 {
+            display: flex;
+
+            /* flex-direction: row; */
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            height: 210px;
+
+            background-color: rgba(252, 201, 201, 0.767);
+            background: -webkit-linear-gradient(top, rgb(139, 230, 238) 35%, white 100%, rgba(249, 242, 242, 0.8) 100%);
+        }
+
+        #box3 {
+            display: flex;
+            flex-direction: column;
+
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            height: 100vh;
+            background: -webkit-linear-gradient(top, white 75%, rgba(228, 225, 225, 0.8) 100%, rgba(9, 6, 6, 0.8) 100%);
+            border-radius: 0px;
+            border: 0px solid rgb(237, 234, 234);
+        }
+
+        .box3 {
+            display: flex;
+            margin-top: 50px;
+        }
+
+        .innerbox {
+            margin: 30px;
+            background-color: white;
+            height: 300px;
+            width: 400px;
+            border: 0px solid rgb(85, 84, 84);
+            box-shadow: 5px 5px 30px rgb(36, 36, 36);
+            border-radius: 10px;
+
+            background-size: cover;
+            background-repeat: no-repeat;
+
+
+        }
+
+        .box4 {
+
+            display: flex;
+            flex-direction: column;
+
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            height: 100vh;
+            background-image: url(IMG/map2.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .box31 {
+            display: flex;
+
+        }
+
+        .name {
+            position: relative;
+            top: 30px;
+            display: flex;
+            flex-direction: column;
+            float: inline-start;
+            gap: 25px;
+
+        }
+
+        .namebox {
+            height: 60px;
+            width: 550px;
+            border-radius: 5px;
+        }
+
+        form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .name ::placeholder {
+            font-weight: bold;
+            font-size: medium;
+        }
+
+        .footerbar {
+
+            width: 100%;
+            background-color: rgb(253, 252, 252);
+            text-align: center;
+            padding: 5px;
+            padding-right: 5px;
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navbar">
+        <div class="dropdownleft">
+            <div class="dropbtnleft">
+                <img src="https://cdn-icons-png.flaticon.com/128/6995/6995971.png" height="25px" width="30px" alt="">
+            </div>
+
+            <div class="dropdownleft-content" onclick="">
+                <a href="#box1" style="padding-left: 20px;">Home</a>
+                <a href="#box3" style="padding-right: 120px;">Service</a>
+                <a href="#box4">About us</a>
+
+            </div>
+
+        </div>
+        <a href="#box1"
+            style="padding-left: 50px; padding-right: 70px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">HOME</a>
+        <a href="#box3"
+            style="padding-right: 70px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">NEWS</a>
+        <a href="#box4"
+            style="padding-right: 70px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">CONTACT</a>
+    </div>
+
+    <!-- <div class="navbar">
+               <div class="dropdownleft">
+            <button class="dropbtnleft">
+                <img src="https://cdn-icons-png.flaticon.com/128/6995/6995971.png" height="25px" width="30px" alt="">
+            </button>
+            <div class="dropdownleft-content" onclick="">
+                <a href="#box1">Home</a>
+                <a href="#box3">Service</a>
+                <a href="#box4">About us</a>
+
+            </div>
+        </div>
+    </div> -->
+    <section class="page-section" id="box1">
+        <div class="box">
+            <h1
+                style="padding-top: 130px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;font-size: xX-large;">
+                Welcome To My
+                World!</h1>
+
+            <a style="font-size: 450%;">IT'S NICE TO MEET YOU</a>
+        </div>
+    </section>
+    <div class="box2"><a href="#box3">
+            <img src="https://cdn-icons-png.flaticon.com/128/14056/14056325.png" height="40px" alt="">
+        </a>
+    </div>
+    <section class="page-section" id="box3">
+        <div id="name">
+            <h1 style="font-size:240%">GAIN SOME EXPERIENCE</h1>
+        </div>
+        <div class="box3">
+            <a href="AI.html">
+                <div class="innerbox" style="background-image: url(IMG/ai.png);">
+                </div>
+            </a>
+            <a href="MH.html">
+                <div class="innerbox" style="background-image: url(IMG/roadmap.png);">
+                </div>
+            </a>
+            <a href="web.html">
+                <div class="innerbox" style="background-image: url(IMG/Website-Banner.jpg.webp);">
+                </div>
+            </a>
+        </div>
+        <div class="box31">
+            <h1 style="margin-right: 370px; margin-left:130PX ;">AI HUB</h1>
+            <h1 style="margin-right:210px;">ROADMAP</h1>
+            <h1 style="margin-left:80px;">LEARNING WEBSITE</h1>
+        </div>
+
+    </section>
+    <section class="page-section" id="box4">
+        <div class="box4">
+            <form>
+                <header style="font-size:xx-large;text-align: center;color: rgb(255, 254, 254);">
+                    <h1>CONTACT US</h1>
+                </header>
+                <div style="float: left;">
+                    <div class="name">
+                        <input type="text" class="namebox" value=" " id="name" required="required" placeholder="Name* ">
+                        <input type="email" class="namebox" id="email" required="required" placeholder="Email*">
+                        <input type="number" class="namebox" id="phone" required="required" placeholder="Phone*">
+                    </div>
+                    <div class="display:flex ">
+                        <textarea name="" id="message" cols="85" rows="16"
+                            style="border-radius: 5px; margin-left: 600px;margin-top:-210px;font-weight: bold;font-size:medium;"
+                            placeholder="Message*"></textarea>
+                    </div>
+
+                </div>
+
+            </form>
+            <button type="submit" style="display: flex;align-items: center;  margin-top: 30px;">Submit</button>
+        </div>
+        <script>
+            function myFunction() {
+
+                alert("Successfully Submitted");
+
+            }
+        </script>
+
+        <div class="footerbar">
+            <img src="https://cdn-icons-png.flaticon.com/128/1409/1409946.png" height="29px" width="29px"
+                style="padding-right: 15px;">
+            <img src="https://cdn-icons-png.flaticon.com/128/3670/3670124.png" height="29px" width="29px"
+                style="padding-right: 15px;">
+            <img src="https://cdn-icons-png.flaticon.com/128/14417/14417709.png" height="29px" width="29px" alt="">
+            <p style="padding-top: 10px;font-weight: bold;"> Copyright © Your Website 2024
+            </p>
+        </div>
+
+        <!-- 
+    </section>
+    <section class="page-section" id="box4">
+        <div class="box4">
+            <form action="">
+                <header style="font-size:xx-large;text-align: center;color: rgb(255, 254, 254);">
+                    <h1>CONTACT US</h1>
+                </header>
+                <div style="float: left;">
+                    <div class="name">
+                        <input type="text" class="namebox" id="name" required="required" placeholder="Name* ">
+                        <input type="email" class="namebox" id="email" required="required" placeholder="Email*">
+                        <input type="number" class="namebox" id="phone" required="required" placeholder="Phone*">
+                    </div>
+                    <div class="display:flex ">
+                        <textarea name="" id="" cols="85" rows="16"
+                            style="border-radius: 5px; margin-left: 600px;margin-top:-210px;font-weight: bold;font-size:medium;"
+                            placeholder="Message*"></textarea>
+                    </div>
+
+                </div>
+                <button type="submit" onclick="myFunction()"
+                    style="display: flex;align-items: center;  margin-top: 30px;">Submit</button>
+
+
+
+            </form>
+            <script>
+                function myFunction() {
+                    alert("Hello, World!");
+                }
+            </script>
+        </div>
+        <div class="footerbar">
+            <img src="https://cdn-icons-png.flaticon.com/128/1409/1409946.png" height="29px" width="29px"
+                style="padding-right: 15px;">
+            <img src="https://cdn-icons-png.flaticon.com/128/3670/3670124.png" height="29px" width="29px"
+                style="padding-right: 15px;">
+            <img src="https://cdn-icons-png.flaticon.com/128/14417/14417709.png" height="29px" width="29px" alt="">
+            <p style="padding-top: 10px;font-weight: bold;"> Copyright © Your Website 2024
+            </p>
+        </div>
+
+
+    </section> -->
+        <!-- <hr style="height: 2px; width: 100%; background-color: aqua;"> -->
+</body>
+
+</html>
